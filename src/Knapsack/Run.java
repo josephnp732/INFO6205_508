@@ -1,10 +1,10 @@
-package project;
+package Knapsack;
+
+import static Knapsack.Values.totalItems;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-
-import static project.Values.totalItems;
 
 public class Run {
 
@@ -20,13 +20,16 @@ public class Run {
     public static void main(String[] args) {
     	generateItems();
     	
+    	KnapsackPhenotype kP = new KnapsackPhenotype();
+    	System.out.println("Phenotype Value (Best possible fitness [value]): " + kP.phenotype);
+    	
     	//Setup the initial population
-    	population = new Population(project.Values.initialPopulation);
+    	population = new Population(Knapsack.Values.initialPopulation);
     	
     	
-        for (int i = 1; i < project.Values.totalGenerations; i++) {
+        for (int i = 1; i < Knapsack.Values.totalGenerations; i++) {
         	int mostFit = population.getFittest().getFitness();
-        	System.out.println("Fitness of fittest individual of Generation " + i + "is : " + mostFit);
+        	System.out.println("Fitness of fittest individual of Generation " + i + " is : " + mostFit);
         	fitnessList.add(mostFit);
         	//TODO: Select the most fit individuals
         	//TODO: Perform Crossover on the most fit individuals

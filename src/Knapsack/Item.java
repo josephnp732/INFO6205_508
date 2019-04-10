@@ -1,4 +1,4 @@
-package project;
+package Knapsack;
 
 public class Item {
 

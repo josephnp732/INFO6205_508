@@ -1,9 +1,10 @@
-package project;
+package Knapsack;
+
+import static Knapsack.Values.knapsackCapacity;
+import static Knapsack.Values.totalItems;
 
 import java.util.ArrayList;
 import java.util.Random;
-import static project.Values.knapsackCapacity;
-import static project.Values.totalItems;
 
 public class Individual {
 
