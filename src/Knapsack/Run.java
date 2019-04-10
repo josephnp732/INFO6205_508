@@ -21,7 +21,7 @@ public class Run {
     	generateItems();
     	
     	KnapsackPhenotype kP = new KnapsackPhenotype();
-    	System.out.println("Phenotype Value (Best possible fitness [value]): " + kP.phenotype);
+    	System.out.println("Phenotype Value (Best possible fitness [value]): " + kP.phenotype);   //The Phenotype value
     	
     	//Setup the initial population
     	population = new Population(Knapsack.Values.initialPopulation);
