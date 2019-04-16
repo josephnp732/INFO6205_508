@@ -2,7 +2,7 @@
  * Copyright (c) 2018. Phasmid Software
  */
 
-package Knapsack;
+package KnapsackTest;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

@@ -5,6 +5,10 @@ import static Knapsack.Values.totalItems;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author Christy
+ *
+ */
 public class KnapsackPhenotype {
 	
 	public static int phenotype;

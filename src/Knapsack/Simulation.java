@@ -5,6 +5,7 @@ package Knapsack;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
 import java.util.Random;
 
 /**
@@ -14,13 +15,14 @@ import java.util.Random;
 public class Simulation {
 	
 	static Population population; 
-	static ItemRoster items;
+	ItemRoster items;
 	static ArrayList<Individual> fitnessList;
 	
 	public Simulation() {
-		population = new Population(Values.initialPopulation);
 		items = new ItemRoster();
+		population = new Population(Values.initialPopulation);
 		fitnessList = new ArrayList<Individual>(Values.totalGenerations);
+		totalGeneration();
 	}
 	
 	
@@ -30,7 +32,7 @@ public class Simulation {
 	 * @param ind2 Individual
 	 * @return ArrayList of genes randomly selected from parent Individuals
 	 */
-	public ArrayList<Integer> crossover(Individual ind1, Individual ind2){
+	public static ArrayList<Integer> crossover(Individual ind1, Individual ind2){
 		ArrayList<Integer> childGenes = new ArrayList<Integer>(Values.totalItems);
 		Random rand = new Random();
 		for (int i = 0; i< ItemRoster.itemList.size(); i++) {
@@ -43,12 +45,20 @@ public class Simulation {
 		}
 		return childGenes;
 	}
+	
+	public static void totalGeneration() {
+		 for (int i = 1; i < Values.totalGenerations; i++) {
+			 newGeneration();
+		 }
+	}
+	
+	
 	/**
 	 * pairs the top 50% of Individuals and create two children to pair
 	 * @param prevGen of Individuals
 	 * @return nextGen of Individuals
 	 */
-	public ArrayList<Individual> mateGeneration(ArrayList<Individual> prevGen){
+	public static ArrayList<Individual> mateGeneration(ArrayList<Individual> prevGen) {
 		ArrayList<Individual> nextGen = new ArrayList<Individual>(Values.initialPopulation);
 		
 		prevGen.sort(new Comparator<Individual>(){
@@ -75,20 +85,18 @@ public class Simulation {
             nextGen.add(individual2);
             nextGen.add(prevGen.get(i));
             nextGen.add(prevGen.get(i+1));
-			
 		}
-		
 		return nextGen;
 	}
-	public void newGeneration() {
+	
+	
+	public static void newGeneration() {
 		ArrayList<Individual> newGen = new ArrayList<Individual>(Values.initialPopulation);
 		newGen.addAll(mateGeneration(Population.individuals));
 		Population.setIndividuals(newGen);
 		Individual mostFit = Population.getFittest();
 		fitnessList.add(mostFit);
-		System.out.println("Fitness of fittest individual of Generation " + 
-				fitnessList.size() + " is : " + mostFit.getFitness());
-		
+		System.out.println("Fitness of fittest individual of Generation " + fitnessList.size() + " is : " + mostFit.getFitness());
 	}
 	
 

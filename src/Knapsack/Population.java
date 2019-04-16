@@ -2,6 +2,10 @@ package Knapsack;
 
 import java.util.ArrayList;
 
+/**
+ * @author Christy
+ *
+ */
 public class Population {
 	
     public static ArrayList<Individual> individuals;
@@ -31,10 +35,12 @@ public class Population {
 		return fittest;
 	}
 
+    
     /** Getters and Setter **/
 	public static void setFittest(Individual fittest) {
 		Population.fittest = fittest;
 	}
+	
 	public static void setIndividuals(ArrayList<Individual> list) {
 		ArrayList<Individual> templist = new ArrayList<Individual>();
 		templist.addAll(list);

@@ -1,5 +1,10 @@
 package Knapsack;
 
+/**
+ * @author Christy
+ * Item object holds the weight and the price of an item  
+ *
+ */
 public class Item {
 
     private int weight;

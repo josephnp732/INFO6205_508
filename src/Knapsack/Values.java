@@ -8,6 +8,4 @@ public class Values {
     public static int knapsackCapacity = 835;
     public static int totalGenerations = 75;
     
-    
-    
 }

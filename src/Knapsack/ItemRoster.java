@@ -4,16 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * @author peter
+ *
+ */
 public class ItemRoster {
 	
 	public static List<Item> itemList;
 	
 	public ItemRoster(){
 		itemList = new ArrayList<Item>();
-		generateItems();
-		
+		generateItems();	
 	}
-	
 	
 
 	public static void generateItems() {
