@@ -16,6 +16,7 @@ public class Run {
     
     	Run run = new Run();
     	//sim.newGeneration();
+    	KnapsackPhenotype KP = new KnapsackPhenotype();
     	
     	/*
         for (int i = 1; i < Values.totalGenerations; i++) {

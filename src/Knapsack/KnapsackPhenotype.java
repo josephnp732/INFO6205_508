@@ -40,5 +40,6 @@ public class KnapsackPhenotype {
 			}
 		}
 		phenotype = K[itemsCount][capacity];
+		System.out.println("Solution: " + phenotype);
 	}
 }
