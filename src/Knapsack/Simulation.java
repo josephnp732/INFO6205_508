@@ -25,7 +25,16 @@ public class Simulation {
 		totalGeneration();
 	}
 	
-	
+	public static ArrayList<Individual> getFitnessList() {
+		return fitnessList;
+	}
+
+
+	public static void setFitnessList(ArrayList<Individual> fitnessList) {
+		Simulation.fitnessList = fitnessList;
+	}
+
+
 	/**
 	 * method to mate two Individual instances
 	 * @param ind1 Individual
