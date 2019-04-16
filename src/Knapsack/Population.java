@@ -1,11 +1,10 @@
 package Knapsack;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Population {
 	
-    public static List<Individual> individuals;
+    public static ArrayList<Individual> individuals;
     private static Individual fittest;
 
 	public Population(int initialPopulation) {
@@ -13,6 +12,7 @@ public class Population {
         for (int i = 0; i < initialPopulation; i++) {             //Adding individuals and their genes to the population
             Individual individual = new Individual();
             individual.generateGenes();
+            
             individuals.add(individual);
         }
     }
@@ -34,5 +34,12 @@ public class Population {
     /** Getters and Setter **/
 	public static void setFittest(Individual fittest) {
 		Population.fittest = fittest;
+	}
+	public static void setIndividuals(ArrayList<Individual> list) {
+		ArrayList<Individual> templist = new ArrayList<Individual>();
+		templist.addAll(list);
+		individuals.clear();
+		individuals.addAll(templist);
+		
 	}
 }

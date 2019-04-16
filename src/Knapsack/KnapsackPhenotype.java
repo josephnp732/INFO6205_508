@@ -12,7 +12,7 @@ public class KnapsackPhenotype {
 	public KnapsackPhenotype() {
 		int[] value = new int[totalItems]; // Values of items
 		int[] weight = new int[totalItems]; // Weight of items
-		List<Item> list = Run.itemList;
+		List<Item> list = ItemRoster.itemList;
 		
 		for(int i = 0; i < totalItems; i++)
 		{
