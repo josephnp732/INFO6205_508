@@ -66,7 +66,7 @@ public class Simulation {
 			@Override
 			public int compare(Individual o1, Individual o2) {
 				
-				return o1.getFitness()-o2.getFitness();
+				return o2.getFitness()-o1.getFitness();
 			}
 		});
 		int cutoff = prevGen.size()/2;
