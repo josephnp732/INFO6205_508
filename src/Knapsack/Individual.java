@@ -6,10 +6,6 @@ import static Knapsack.Values.totalItems;
 import java.util.ArrayList;
 import java.util.Random;
 
-/**
- * @author Christy
- *
- */
 public class Individual {
 
     public ArrayList<Integer> genes;
@@ -51,7 +47,6 @@ public class Individual {
         	this.individualFitness = this.price;
         }
     }
-    
     /*
     public void generatePhenotype() {
     	for(int i:genes) {
@@ -65,7 +60,6 @@ public class Individual {
     	
     }
     */
-    
     /** Getters and Setters **/
     public ArrayList<Integer> getGenes() {
         return genes;
