@@ -22,7 +22,8 @@ public class MainRun extends Application{
     
     public static void main(String[] args) {
     
-    	MainRun run = new MainRun();
+    	@SuppressWarnings("unused")
+		MainRun run = new MainRun();
     	//sim.newGeneration();
     	/*
         for (int i = 1; i < Values.totalGenerations; i++) {

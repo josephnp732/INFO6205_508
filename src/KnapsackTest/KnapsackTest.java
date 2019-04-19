@@ -1,4 +1,4 @@
-package Knapsack;
+package KnapsackTest;
 
 import org.junit.Test;
 
