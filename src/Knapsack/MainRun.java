@@ -31,7 +31,7 @@ public class MainRun extends Application{
         	
         }
         */
-    	launch();
+    	launch(args);
     }
 
 	@Override
