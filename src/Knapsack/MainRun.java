@@ -17,7 +17,7 @@ public class MainRun extends Application{
     public MainRun() {
     	sim = new Simulation();
     	fitnessList = Simulation.getFitnessList();
-    	//sim.newGeneration();
+    	
     }
     
     public static void main(String[] args) {
@@ -31,7 +31,7 @@ public class MainRun extends Application{
         	
         }
         */
-    	launch(args);
+    	launch();
     }
 
 	@Override

@@ -88,8 +88,8 @@ public class Simulation {
             individual2.setGenes(crossover(prevGen.get(i), prevGen.get(i+1)));
             individual.calculateGeneFitness();
             individual2.calculateGeneFitness();
-            //individual.generatePhenotype();
-            //individual2.generatePhenotype();
+            individual.generatePhenotype();
+            individual2.generatePhenotype();
             nextGen.add(individual);
             nextGen.add(individual2);
             nextGen.add(prevGen.get(i));
@@ -107,14 +107,6 @@ public class Simulation {
 		fitnessList.add(mostFit);
 		System.out.println("Fitness of fittest individual of Generation " + fitnessList.size() + " is : " + mostFit.getFitness());
 	}
-	
-
-	/*
-	int mostFit = population.getFittest().getFitness();
-	System.out.println("Fitness of fittest individual of Generation " + i + " is : " + mostFit);
-	*/
-	
-	//TODO: access methods: print fitnessList-- overwrite toString() for Individual from population
 	
 	
 	
