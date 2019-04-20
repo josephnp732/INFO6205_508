@@ -17,20 +17,14 @@ public class MainRun extends Application{
     public MainRun() {
     	sim = new Simulation();
     	fitnessList = Simulation.getFitnessList();
-    	//sim.newGeneration();
+    	
     }
     
     public static void main(String[] args) {
     
     	@SuppressWarnings("unused")
 		MainRun run = new MainRun();
-    	//sim.newGeneration();
-    	/*
-        for (int i = 1; i < Values.totalGenerations; i++) {
-        	sim.newGeneration();
-        	
-        }
-        */
+    	
     	launch();
     }
 
