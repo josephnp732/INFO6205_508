@@ -1,10 +1,10 @@
-# Team 508 - Using Genetic Algorithm Technique to maximize marks in an exam using 0/1 Knapsack algorithm 
+# Team 508 - Using Genetic Algorithm Technique to solve 0/1 Knapsack algorithm 
 PSA Project (INFO 6205) - Team 508 - Knapsack Problem
 
 ## Knapsack Algorithm:
 The knapsack problem or rucksack problem is a problem in combinatorial optimization: Given a set of items, each with a weight and a value, determine the number of each item to include in a collection so that the total weight is less than or equal to a given limit and the total value is as large as possible. It derives its name from the problem faced by someone who is constrained by a fixed-size knapsack and must fill it with the most valuable items.
 
-## Problem Statement:
+## Project Application:
 One example where Knapsack algorithm is used is the preparation for exam paper just a night before exam. Indian students are mastered in applying the Knapsack solution while exam preparation. Let me explain how.
 
 What is our thinking just a night before exams? Get more marks by less study in the remaining amount of hours. Right? So, here we are trying to optimize our efforts for getting more marks. Now, we analyze our previous question papers and decide that which chapters have more value and which chapters have less. We also have a sense that how much time it will take to complete the chapter by checking the number of pages of the chapter in the book.
