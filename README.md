@@ -1,4 +1,4 @@
-# Team 508 - Using Genetic Algorithm Technique to maximize marks in an exam using 0/1 Knapsack algorithm 
+# Team 508 - Using Genetic Algorithm Technique to solve 0/1 Knapsack algorithm 
 PSA Project (INFO 6205) - Team 508 - Knapsack Problem
 
 ## Knapsack Algorithm:
